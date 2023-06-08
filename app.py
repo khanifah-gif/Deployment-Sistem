@@ -81,3 +81,6 @@ def predict():
 
 
     return render_template("index.html", prediction_text = "{} Day left".format(int(prediction)), fitur_dict=fitur_dict)
+
+if __name__ =="__main__":
+    app.run(debug=False,host='0.0.0.0')
